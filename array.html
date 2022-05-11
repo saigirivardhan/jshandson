@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1. Find a product:
+    const Find_Prod = (array, N) => 
+{
+ let result=array.reduce(function(acc,item){
+   acc=acc * item;
+   return acc;
+   },1)
+   return result;
+};
+2. const Find_Sum = (array, N) => 
+{
+  let output=array.reduce(function(acc,item){
+    acc += item;
+    return acc;
+  },0)
+  return output;
+
+};
+3.const findCount = (N, K, Arr) => 
+{
+  let count=0;
+    let output=Arr.reduce(function(N,item){
+      if(item==K){
+        count=count+1;
+      }
+      return count;
+    },0)
+    return output;
+};
+4.const findEvenOdd = (N, Arr) => 
+{
+// let output=Arr.filter((item)=>item%2===0).reduce((acc,item)=>acc=acc+item,0);
+// let outpu=Arr.filter(item=>item%2!==0).reduce((odd,item)=> odd=odd+item,0);
+// function isEven(i) {
+//   return n % 2 === 0;
+// }
+  let evensum=0;
+ let oddsum=0;
+ let B=[];
+ for(let i=0; i<N;i++){
+   if(Arr[i]%2===0){
+     evensum=evensum+Arr[i];
+   }
+   else{
+     oddsum=oddsum+Arr[i];
+   }
+ }
+ B.push(oddsum);
+ B.unshift(evensum);
+ return B;
+};
+5.const Find_Num = (array,N,M) => 
+{
+  // let Element=M;
+  for(
+    if(array.indexOf(M)==-1)
+    return 'NO'
+    else
+    return 'YES'
+  }
+};
+6.const highAge = (N, Arr) => 
+{
+  var freq=[];
+    for(var i=0;i<Arr.length;i++){
+      if(Arr[i]>=18){
+        freq.push(Arr[i]);
+      }
+         
+    }
+    return freq;
+//   let newarr=Arr.reduce(function(acc,curr) =>{
+// if(acc>=18)
+// return acc;
+// } , 0 );
+//   return newarr;
+};
+7.const Inc_Arr = (array,N) => 
+{
+  for(i=0;i<array.length;i++){
+    console.log(array[i]=array[i]+1);
+  }
+};
+7.const Inc_Arr = (array,N) => 
+{
+  for(i=0;i<array.length;i++){
+    console.log(array[i]=array[i]+1);
+  }
+};
+8.const isAllPass = (N, Arr) => 
+{ 
+  var result=0;
+for(var i=0;i<Arr.length;i++){
+if(Arr[i]>=32)
+result++;
+}
+if(result===N)
+return 'YES';
+else
+return 'NO';
+
+};
+9.function Unique_Shirts (arr,N) { 
+    let unique=arr.filter((value)=>arr.indexOf(value)===arr.lastIndexOf(value));
+      return (unique.length);
+    
+    }
+10.function arrayMin(arr) {
+    let res1= Math.min(...arr);
+   return res1;
+ 
+ }
+ 
+ function arrayMax(arr) {
+  
+  let res2= Math.max(...arr);
+  return res2;
+ 
+ }
+   
+   }
+
+</body>
+</html>
